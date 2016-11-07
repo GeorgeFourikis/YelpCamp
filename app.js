@@ -3,8 +3,11 @@ var app        = express();
 var request    = require("request");
 var bodyParser = require("body-parser");
 var mongoose   = require("mongoose");
+var passport   = require("passport");
+var LocalStrategy = require("passport-local");
 var seedDB     = require("./seeds");
 var Campground = require("./models/campground");
+var User       = require("./models/user");
 var Comment    = require("./models/comment");
 
 seedDB();
