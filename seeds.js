@@ -19,10 +19,10 @@ var data = [
 function seedDB(){
   //remove all campgrounds
   Campground.remove({}, function(err){
-    if(err){
-      console.log(err);
-    }
-    console.log("removed Camgrounds");
+    // if(err){
+    //   console.log(err);
+    // }
+    // console.log("removed Camgrounds");
     //add a few campgrounds
     // data.forEach(function(seed){
     //   Campground.create(seed, function(err, campground){
