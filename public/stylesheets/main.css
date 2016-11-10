@@ -10,3 +10,7 @@
 .caption-full {
   padding: 2em;
 }
+
+#delete-form {
+  display: inline;
+}
