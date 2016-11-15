@@ -22,7 +22,8 @@ console.log();
 // seed the database
 // seedDB();
 
-mongoose.connect(process.env.DATABASEURL);
+var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp"
+mongoose.connect(url);
 
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -60,8 +61,10 @@ app.use(indexRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 app.use("/campgrounds", campgroundRoutes);
 
+app.set('port', process.env.PORT || 3000);
 
-app.listen( process.env.PORT,  process.env.IP, function(){
+
+app.listen(app.get("port"), function(){
   console.log("YelpCamp Server is Up...")
 });
 
