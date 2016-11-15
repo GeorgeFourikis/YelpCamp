@@ -1,10 +1,10 @@
 {
   "name": "yelpcamp",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "George Fourikis",
   "license": "ISC",
@@ -19,5 +19,16 @@
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^4.0.0",
     "request": "^2.75.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeFourikis/YelpCamp.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/GeorgeFourikis/YelpCamp/issues"
+  },
+  "homepage": "https://github.com/GeorgeFourikis/YelpCamp#readme",
+  "description": ""
 }
