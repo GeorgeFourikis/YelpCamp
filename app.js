@@ -19,7 +19,9 @@ var indexRoutes        = require("./routes/index");
 
 // seed the database
 // seedDB();
-mongoose.connect("mongodb://localhost/yelp_camp");
+// mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://GeorgeFourikis:12151988vlahunter@ds155097.mlab.com:55097/yelpcamp");
+// mongodb://GeorgeFourikis:12151988vlahunter@ds155097.mlab.com:55097/yelpcamp
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
@@ -59,3 +61,7 @@ app.use("/campgrounds", campgroundRoutes);
 app.listen( process.env.PORT,  process.env.IP, function(){
   console.log("YelpCamp Server is Up...")
 });
+
+// app.listen(3000, function(){
+//   console.log("YelpCamp Server is Up...")
+// });
